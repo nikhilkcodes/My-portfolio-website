@@ -1,0 +1,25 @@
+.skill-color {
+   background-color: #19203a;
+   padding-bottom: 3%;
+}
+.heading-above {
+   padding-top: 5%;
+   font-size: 40px;
+}
+.skill-body {
+	padding-bottom: 1%;
+}
+
+.icon-body {
+	font-size: 100px;
+	color: white;
+	text-decoration: none;
+	width: 1em;
+	height: 1em;
+}
+.icon-body:hover {
+   transform: scale(1.1); /* Example: Increase size on hover */
+   opacity: 0.5;
+
+}
+
