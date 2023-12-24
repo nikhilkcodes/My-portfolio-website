@@ -15,7 +15,7 @@ const Portfolio = () => {
 		<div className="portfolio-body">
 			<ContentWrapper>
 				<div className="container">
-								<h1 className="text-white text-end pb-3">Personal Projects</h1>
+								<h1 className="text-white text-center pb-3">Personal Projects</h1>
 				<div class="container text-start">
 						<div class="row row-cols-1 row-cols-md-3 g-2 g-lg-3">
 						<div class="col">

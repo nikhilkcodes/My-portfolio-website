@@ -21,12 +21,12 @@ const Skill = () => {
 	return (
 		<div className="skill-color">
 			<ContentWrapper>
-				<div className="skill-body">
+				<div className="skill-body d-flex justify-content-center">
 
 					<div className="container">
-					<h1 className="heading-above text-white text-start">Skills & Tools</h1>
-					<p className="text-white text-start">If you know what you are looking for</p>
-						<div className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 portfolio-images">
+					<h1 className="heading-above text-white text-center">Skills & Tools</h1>
+					<p className="text-white text-center">If you know what you are looking for</p>
+						<div className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 portfolio-images justify-content-center">
 							{/* Icons */}
 							<div className="col">
 								<div>

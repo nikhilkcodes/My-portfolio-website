@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import './style.css';
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 import hand from '../../images/hand.png';
-import profile from '../../images/profile-img.jpeg';
+import profile from '../../images/profile-img.jpg';
 import Button from '../Button/Button'
 const Intro = () => {
     const openGmailMessage = () => {
@@ -68,16 +68,16 @@ const Intro = () => {
 					</div>
 					<div className="col-md-6 order-md-2">
 						<div>
-							<h5 className="text-white">
+							<h5 className="text-white text-center">
 								<a target="_blank" rel="noopener noreferrer">Hello
 									<span className="icon">
 										<img src={hand} />
 									</span>
 								</a>
 							</h5>
-							<h2 className="mt-3 mb-3 text-white">I'm Nikhil Singh</h2>
-							<h5 className="mb-4 text-white">{currentRole}</h5>
-							<p className="text-white">
+							<h2 className="mt-3 mb-3 text-white text-center">I'm Nikhil Singh</h2>
+							<h5 className="mb-4 text-white text-center">{currentRole}</h5>
+							<p className="text-white text-center">
 								I'm Nikhil Singh, a recent graduate and MERN stack developer. Armed
 								with expertise in MongoDB, Express.js, React.js, and Node.js. I love
 								to write about new technologies and build cool products, seeking job

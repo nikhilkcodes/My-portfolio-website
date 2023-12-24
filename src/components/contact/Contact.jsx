@@ -22,7 +22,7 @@ const Contact = () => {
 		<div className="contact-body">
 			<ContentWrapper>
 				<div className="container text-start">
-					<h1 className="text-white text-start pb-3">Any Question? Feel Free to Contact</h1>
+					<h1 className="text-white text-center pb-3">Any Question? Feel Free to Contact</h1>
 					<div className="row align-items-start">
 						<div className="col">
 							<div className="card bg-black" style={{ width: '18rem' }}>
