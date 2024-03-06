@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import './style.css';
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 import hand from '../../images/hand.png';
-import profile from '../../images/profile-img.jpg';
+import profile from '../../images/profile-img.jpeg';
 import Button from '../Button/Button'
 const Intro = () => {
     const openGmailMessage = () => {
@@ -22,7 +22,7 @@ const Intro = () => {
 		const linkedinMessageURL = `https://www.linkedin.com/in/${linkedinUsername}/?originalSubdomain=messaging&isAuthenticated=true&message=${encodeURIComponent(customMessage)}`;
 	    window.open(linkedinMessageURL, '_blank');
 	}
-	const roles = ["Mern Stack Developer", "Web Designer", "Freelancer", "Pet Lover", "Guitarist"];
+	const roles = ["Mern Stack Developer", "Web Designer", "Freelancer"];
 	const [currentRole, setCurrentRole] = useState("");
 	useEffect(() => {
 		// Declare variables to keep track of the current role index and character index.
