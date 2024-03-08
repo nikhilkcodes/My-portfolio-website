@@ -20,107 +20,96 @@ const Skill = () => {
 
 	return (
 		<div className="skill-color">
+							<h1 className="heading-above text-white text-center">Skills & Tools</h1>
+					<p className="text-white text-center">If you know what you are looking for</p>
 			<ContentWrapper>
 				<div className="skill-body d-flex justify-content-center">
-
-					<div className="container">
-					<h1 className="heading-above text-white text-center">Skills & Tools</h1>
-					<p className="text-white text-center">If you know what you are looking for</p>
-						<div className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 portfolio-images justify-content-center">
-							{/* Icons */}
-							<div className="col">
-								<div>
-									<a className="icon-body" href="https://developer.mozilla.org/en-US/docs/Web/javascript">
+					<div className="logos">
+								<div className="logos-slide">
+								<a className="icon-body p-3" href="https://developer.mozilla.org/en-US/docs/Web/javascript">
 										<IoLogoJavascript />
 									</a>
-								</div>
-							</div>
-							<div className="col">
-								<div>
-									<a className="icon-body" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+									<a className="icon-body p-3" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
 										<FaHtml5 />
 									</a>
-								</div>
-							</div>
-							<div className="col">
-								<div>
-									<a className="icon-body" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+									<a className="icon-body p-3" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
 										<FaCss3Alt />
 									</a>
-								</div>
-							</div>
-							<div className="col">
-								<div>
-									<a className="icon-body" href="https://getbootstrap.com/docs/4.1/getting-started/introduction/">
+									<a className="icon-body p-3" href="https://getbootstrap.com/docs/4.1/getting-started/introduction/">
 										<FaBootstrap />
 									</a>
-								</div>
-							</div>
-							<div className="col">
-								<div>
-									<a className="icon-body" href="https://react.dev/">
+									<a className="icon-body p-3" href="https://react.dev/">
 										<FaReact />
 									</a>
-								</div>
-							</div>
-							<div className="col">
-								<div>
-									<a className="icon-body" href="https://redux.js.org/">
+									<a className="icon-body p-3" href="https://redux.js.org/">
 										<SiRedux />
 									</a>
-								</div>
-							</div>
-							<div className="col">
-								<div>
-									<a className="icon-body" href="https://expressjs.com/">
+									<a className="icon-body p-3" href="https://expressjs.com/">
 										<FaNode />
 									</a>
-								</div>
-							</div>
-							<div className="col">
-								<div>
-									<a className="icon-body" href="https://git-scm.com/">
+									<a className="icon-body p-3" href="https://git-scm.com/">
 										<SiPostman />
 									</a>
-								</div>
-							</div>
-							<div className="col">
-								<div>
-									<a className="icon-body" href="https://www.postgresql.org/docs/">
+									<a className="icon-body p-3" href="https://www.postgresql.org/docs/">
 										<BiLogoPostgresql />
 									</a>
-								</div>
-							</div>
-							<div className="col">
-								<div>
-									<a className="icon-body" href="https://www.mongodb.com/">
+									<a className="icon-body p-3" href="https://www.mongodb.com/">
 										<BiLogoMongodb />
 									</a>
-								</div>
-							</div>
-							<div className="col">
-								<div>
-									<a className="icon-body" href="https://git-scm.com/">
+									<a className="icon-body p-3" href="https://git-scm.com/">
 										<FaGitAlt />
 									</a>
-								</div>
-							</div>
-							<div className="col">
-								<div>
-									<a className="icon-body" href="https://docs.github.com/en">
+									<a className="icon-body p-3" href="https://docs.github.com/en">
 										<FaGithub />
 									</a>
+									<a className="icon-body p-3" href="https://git-scm.com/">
+										<FaLinux />
+									</a>
 								</div>
-							</div>
-							<div className="col">
-								<div>
-									<a className="icon-body" href="https://git-scm.com/">
+
+								<div className="logos-slide">
+								<a className="icon-body p-3" href="https://developer.mozilla.org/en-US/docs/Web/javascript">
+										<IoLogoJavascript />
+									</a>
+									<a className="icon-body p-3" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+										<FaHtml5 />
+									</a>
+									<a className="icon-body p-3" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+										<FaCss3Alt />
+									</a>
+									<a className="icon-body p-3" href="https://getbootstrap.com/docs/4.1/getting-started/introduction/">
+										<FaBootstrap />
+									</a>
+									<a className="icon-body p-3" href="https://react.dev/">
+										<FaReact />
+									</a>
+									<a className="icon-body p-3" href="https://redux.js.org/">
+										<SiRedux />
+									</a>
+									<a className="icon-body p-3" href="https://expressjs.com/">
+										<FaNode />
+									</a>
+									<a className="icon-body p-3" href="https://git-scm.com/">
+										<SiPostman />
+									</a>
+									<a className="icon-body p-3" href="https://www.postgresql.org/docs/">
+										<BiLogoPostgresql />
+									</a>
+									<a className="icon-body p-3" href="https://www.mongodb.com/">
+										<BiLogoMongodb />
+
+									</a>
+									<a className="icon-body p-3" href="https://git-scm.com/">
+										<FaGitAlt />
+									</a>
+									<a className="icon-body p-3" href="https://docs.github.com/en">
+										<FaGithub />
+									</a>
+									<a className="icon-body p-3" href="https://git-scm.com/">
 										<FaLinux />
 									</a>
 								</div>
 							</div>
-						</div>
-					</div>
 				</div>
 				<div className="d-flex justify-content-center align-items-center">
 					<button
