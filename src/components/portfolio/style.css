@@ -1,9 +1,8 @@
 .portfolio-body{
-	background-color: #0e1630;
-	padding-top: 5%;
+	padding-top: 2%;
 }
 .card:hover {
-  animation: pulse 0.3s ;
+  animation: ease-in 0.3s ;
 }
 
 @keyframes pulse {

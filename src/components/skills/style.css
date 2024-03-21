@@ -1,6 +1,6 @@
 .skill-color {
-   background-color: #19203a;
    padding-bottom: 3%;
+   background-color: #DDDDDD;
 }
 .heading-above {
    padding-top: 5%;
@@ -70,4 +70,7 @@
   .logos-slide img {
 	height: 50px;
 	margin: 0 40px;
+  }
+  .dark-icon {
+	color: #000; /* Set color for icon in dark mode */
   }

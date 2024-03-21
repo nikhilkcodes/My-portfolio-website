@@ -3,7 +3,7 @@ import './style.css'
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { IoLogoJavascript } from "react-icons/io5";
+import { RiJavascriptFill } from "react-icons/ri";
 import { BiLogoMongodb,BiLogoPostgresql } from "react-icons/bi";
 import { SiRedux,SiPostman } from "react-icons/si";
 import { FaHtml5,FaCss3Alt,FaBootstrap,FaReact,FaNode,FaGithub,FaGitAlt, FaLinux  } from "react-icons/fa";
@@ -20,93 +20,93 @@ const Skill = () => {
 
 	return (
 		<div className="skill-color">
-							<h1 className="heading-above text-white text-center">Skills & Tools</h1>
-					<p className="text-white text-center">If you know what you are looking for</p>
+							<h1 className="heading-above text-black text-center">Skills & Tools</h1>
+					<p className="text-black text-center">If you know what you are looking for</p>
 			<ContentWrapper>
 				<div className="skill-body d-flex justify-content-center">
 					<div className="logos">
 								<div className="logos-slide">
 								<a className="icon-body p-3" href="https://developer.mozilla.org/en-US/docs/Web/javascript">
-										<IoLogoJavascript />
+										<RiJavascriptFill className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-										<FaHtml5 />
+										<FaHtml5  className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-										<FaCss3Alt />
+										<FaCss3Alt  className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://getbootstrap.com/docs/4.1/getting-started/introduction/">
-										<FaBootstrap />
+										<FaBootstrap  className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://react.dev/">
-										<FaReact />
+										<FaReact  className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://redux.js.org/">
-										<SiRedux />
+										<SiRedux  className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://expressjs.com/">
-										<FaNode />
+										<FaNode  className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://git-scm.com/">
-										<SiPostman />
+										<SiPostman  className="dark-icon"/>
 									</a>
 									<a className="icon-body p-3" href="https://www.postgresql.org/docs/">
-										<BiLogoPostgresql />
+										<BiLogoPostgresql  className="dark-icon"/>
 									</a>
 									<a className="icon-body p-3" href="https://www.mongodb.com/">
-										<BiLogoMongodb />
+										<BiLogoMongodb  className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://git-scm.com/">
-										<FaGitAlt />
+										<FaGitAlt  className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://docs.github.com/en">
-										<FaGithub />
+										<FaGithub  className="dark-icon"/>
 									</a>
 									<a className="icon-body p-3" href="https://git-scm.com/">
-										<FaLinux />
+										<FaLinux  className="dark-icon" />
 									</a>
 								</div>
 
 								<div className="logos-slide">
 								<a className="icon-body p-3" href="https://developer.mozilla.org/en-US/docs/Web/javascript">
-										<IoLogoJavascript />
+										<RiJavascriptFill  className="dark-icon"/>
 									</a>
 									<a className="icon-body p-3" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-										<FaHtml5 />
+										<FaHtml5  className="dark-icon"/>
 									</a>
 									<a className="icon-body p-3" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-										<FaCss3Alt />
+										<FaCss3Alt  className="dark-icon"/>
 									</a>
 									<a className="icon-body p-3" href="https://getbootstrap.com/docs/4.1/getting-started/introduction/">
-										<FaBootstrap />
+										<FaBootstrap  className="dark-icon"/>
 									</a>
 									<a className="icon-body p-3" href="https://react.dev/">
-										<FaReact />
+										<FaReact  className="dark-icon"/>
 									</a>
 									<a className="icon-body p-3" href="https://redux.js.org/">
-										<SiRedux />
+										<SiRedux  className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://expressjs.com/">
-										<FaNode />
+										<FaNode  className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://git-scm.com/">
-										<SiPostman />
+										<SiPostman  className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://www.postgresql.org/docs/">
-										<BiLogoPostgresql />
+										<BiLogoPostgresql  className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://www.mongodb.com/">
-										<BiLogoMongodb />
+										<BiLogoMongodb  className="dark-icon" />
 
 									</a>
 									<a className="icon-body p-3" href="https://git-scm.com/">
-										<FaGitAlt />
+										<FaGitAlt  className="dark-icon" />
 									</a>
 									<a className="icon-body p-3" href="https://docs.github.com/en">
-										<FaGithub />
+										<FaGithub  className="dark-icon" />
 									</a>
-									<a className="icon-body p-3" href="https://git-scm.com/">
-										<FaLinux />
+									<a className="icon-body p-3" href="https://www.kernel.org/doc/html/latest/">
+										<FaLinux  className="dark-icon" />
 									</a>
 								</div>
 							</div>
@@ -114,9 +114,10 @@ const Skill = () => {
 				<div className="d-flex justify-content-center align-items-center">
 					<button
 						type="button"
-						className="justify-content-center btn btn-outline-light btn-lg"
+						className="justify-content-center btn btn-outline-dark btn-lg"
 						onClick={handleDownload}
 					>
+						{/*default color white not changing in dark*/}
 						Download Resume <FontAwesomeIcon icon={faDownload} />
 					</button>
 				</div>

@@ -68,16 +68,16 @@ const Intro = () => {
 					</div>
 					<div className="col-md-6 order-md-2">
 						<div>
-							<h5 className="text-white text-center">
+							<h5 className="text-black text-center">
 								<a target="_blank" rel="noopener noreferrer">Hello
 									<span className="icon">
 										<img src={hand} />
 									</span>
 								</a>
 							</h5>
-							<h2 className="mt-3 mb-3 text-white text-center">I'm Nikhil Singh</h2>
-							<h5 className="mb-4 text-white text-center">{currentRole}</h5>
-							<p className="text-white text-center">
+							<h2 className="mt-3 mb-3 text-black text-center">I'm Nikhil Singh</h2>
+							<h5 className="mb-4 text-black text-center">{currentRole}</h5>
+							<p className="text-black text-center">
 								I'm Nikhil Singh, a recent graduate and MERN stack developer. Armed
 								with expertise in MongoDB, Express.js, React.js, and Node.js. I love
 								to write about new technologies and build cool products, seeking job

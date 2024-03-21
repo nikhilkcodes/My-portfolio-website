@@ -12,34 +12,34 @@ const Footer = () => {
 					<div class="row row-cols-4 row-cols-lg-4 g-2 g-lg-3">
 						<div className="col">
 							<a href="https://www.linkedin.com/in/nikhil-singh-in/">
-							<div className="social-icn text-white">
+							<div className="social-icn text-black">
 							<FaLinkedin />
 							</div>
 							</a>
 						</div>
 						<div className="col">
 							<a href="https://www.instagram.com/nikhilsingh.dev/">
-							<div className="social-icn text-white">
+							<div className="social-icn text-black">
 							<FaInstagram />
 							</div>
 							</a>
 						</div>
 						<div className="col">
 							<a href="https://github.com/nikhilkcodes">
-							<div className="social-icn text-white">
+							<div className="social-icn text-black">
 							<FaGithub />
 							</div>
 							</a>
 						</div>
 						<div className="col pb-4">
 							<a href="https://twitter.com/mainikhilhun">
-							<div className="social-icn text-white">
+							<div className="social-icn text-black">
 								<FaXTwitter />
 							</div>
 							</a>
 						</div>
 					</div>
-					<h5 className="text-center text-white">Designed and developed by Nikhil Singh</h5>
+					<h5 className="text-center text-black">Designed and developed by Nikhil Singh</h5>
 				</div>
 			</ContentWrapper>
 		</div>

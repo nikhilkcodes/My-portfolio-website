@@ -1,5 +1,5 @@
 .Nav-color {
-	background-color: #0e1630;
+	background-color: #DDDDDD;
 }
 .routes:hover{
 	color: #EE2B47;
@@ -12,23 +12,11 @@
 	align-items: center;
 }
 
-@keyframes pulse-heartbeat {
-	0% {
-	  transform: scale(1);
-	}
-	50% {
-	  transform: scale(1.1);
-	}
-	100% {
-	  transform: scale(1);
-	}
-}
-.nav-item:hover {
-	animation: pulse-heartbeat 0.5s ease-out;
-   transform-origin: center;
-}
-
 .active {
 	color: white;
 }
 
+.custom-link {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Match the text color */
+}
