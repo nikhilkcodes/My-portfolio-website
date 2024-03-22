@@ -4,10 +4,15 @@ import Card from "../card/Card";
 import './style.css';
 import movie from './../../images/project1.png';
 import hospital from './../../images/project2.png';
-import todo from './../../images/project3.png';
-
 import pretium from './../../images/project6.png';
-
+import todo from './../../images/todo.png';
+import vibe from './../../images/vibe.png';
+import employee from './../../images/employee.png';
+import vibevideo from './../../assets/videos/vibe.mp4';
+import hospitalvideo from './../../assets/videos/hospital.mp4';
+import employeevideo from './../../assets/videos/employee.mp4';
+import cinemania from './../../assets/videos/cinemania.mp4';
+import todovideo from './../../assets/videos/todo.mp4';
 
 const Portfolio = () => {
 	return (
@@ -19,50 +24,60 @@ const Portfolio = () => {
 						<div class="row row-cols-1 row-cols-md-3 g-2 g-lg-3">
 						<div class="col">
 							<div class="p-3"><Card
-							imageUrl={movie}
+							imageUrl={vibe}
 							title="VibeMatch ( Social Media Website )"
-							videoUrl= "https://www.loom.com/share/c167ed702a594925b6a180ed3c5f9fe1?sid=e5927294-54d1-4e56-ac86-4b32a8356f64"
+							videoUrl={vibevideo}
 							buttonLink="https://github.com/nikhilkcodes/Vibe-match-social-media"
+							Demo='https://vibematchup.netlify.app/sign-in'
 							/>
 							</div>
 						</div>
 						<div class="col">
 							<div class="p-3"><Card  imageUrl={movie}
 							title="Movie database ( React & redux )"
-							videoUrl="https://www.loom.com/share/2138576f3b274ca09cfe0549b9c6c8a8?sid=989ca4fa-96bf-40c5-b745-c48591ec0d89"
+							videoUrl={cinemania}
 							buttonLink="https://github.com/nikhilkcodes/Cinemania-moviedb-react"
+							Demo='https://cinemania-moviedb-react-zgvz-cqij30rbd-nikhil-singhs-projects.vercel.app/'
 							/>
 							</div>
 						</div>
 						<div class="col">
-							<div class="p-3"><Card  imageUrl={hospital}
-							title="Hospital Management System"
-							videoUrl="https://www.loom.com/share/80e4fa64b47741259d076c993dc84db1?sid=439b13f3-8b1c-4f84-8e1f-a579d991708b"
+						    <div class="p-3"><Card  imageUrl={hospital}
+							title="Hospital Management DB ( Node.JS )"
+							videoUrl={hospitalvideo}
 							buttonLink="https://github.com/nikhilkcodes/Hospital-Management-System"
+						    Demo='https://www.loom.com/share/0573038c8203445388d919d2fe573a23?sid'
+						/>
+						</div>
+						</div>
+						<div class="col">
+							<div class="p-3"><Card  imageUrl={employee}
+							title="Employee Management DB"
+							videoUrl={employeevideo}
+							buttonLink="https://github.com/nikhilkcodes/Employee-management-db"
+							Demo='https://www.loom.com/share/15476fe1bb284f22963691a9f525ab75?sid=acd8c1fa-2d80-48a1-8487-b966d4f39fc0'
 							/>
 							</div>
 						</div>
 						<div class="col">
 							<div class="p-3"><Card  imageUrl={todo}
-							title="Employee Management DB"
-							videoUrl="https://www.loom.com/share/960cc32aafb241e4a3754a0600aefc49?sid=3e9d822d-d06e-428a-9224-1d5b726ab273"
-							buttonLink="https://github.com/nikhilkcodes/Employee-management-db"
+							title="Simple Todo-List"
+							videoUrl={todovideo }
+							buttonLink="https://github.com/nikhilkcodes/todo-react"
+							Demo='https://todo-react-steel-alpha.vercel.app/'
 							/>
 							</div>
 						</div>
-
-
 						<div class="col">
 							<div class="p-3"><Card  imageUrl={pretium}
 							title="Pretium Soltech"
 							buttonLink="https://pretiumsoltech.com/"
+							Demo='https://pretiumsoltech.com/'
 							/>
-							</div>
 						</div>
-
+						</div>
 					</div>
 				</div>
-
 				</div>
 			</ContentWrapper>
 		</div>

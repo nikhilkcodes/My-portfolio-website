@@ -88,10 +88,7 @@ const Intro = () => {
 							<div className="container text-center">
 								<div className="row">
 									<div className="col">
-										<Button onClick={openGmailMessage} value="Contact me" />
-									</div>
-									<div className="col">
-										<Button onClick={openLinkedInMessage} value="Hire me" />
+										<Button onClick={openGmailMessage} value="Get In Touch" />
 									</div>
 								</div>
 							</div>

@@ -20,7 +20,7 @@ const Skill = () => {
 
 	return (
 		<div className="skill-color">
-							<h1 className="heading-above text-black text-center">Skills & Tools</h1>
+					<h1 className="heading-above text-black text-center">Skills & Tools</h1>
 					<p className="text-black text-center">If you know what you are looking for</p>
 			<ContentWrapper>
 				<div className="skill-body d-flex justify-content-center">
@@ -118,7 +118,7 @@ const Skill = () => {
 						onClick={handleDownload}
 					>
 						{/*default color white not changing in dark*/}
-						Download Resume <FontAwesomeIcon icon={faDownload} />
+						Download CV <FontAwesomeIcon icon={faDownload} />
 					</button>
 				</div>
 			</ContentWrapper>

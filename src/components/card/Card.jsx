@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { IoMdExit } from "react-icons/io";
 const Card = (props) => {
-	const { imageUrl, title, videoUrl, buttonLink } = props
+	const { imageUrl, title, videoUrl, buttonLink, Demo } = props
 
 	const [isHovered, setIsHovered] = useState(false);
 
@@ -12,9 +12,12 @@ const Card = (props) => {
                 {!isHovered && <img src={imageUrl} className="card-img-top" alt="..." />}
             </div>
 			<div className="card-body">
-				<h5 className="card-title">{title}</h5>
-				<a href={buttonLink} className="btn btn-outline-light d-flex justify-content-center">
-					View Project &emsp;  <FaArrowUpRightFromSquare />
+				<p className="card-title">{title}</p>
+				<a href={buttonLink} className="btn btn-outline-dark d-flex justify-content-center">
+				Github
+				</a>
+				<a href={Demo} className="btn btn-outline-dark d-flex justify-content-center">
+				Demo
 				</a>
 			</div>
 		</div>

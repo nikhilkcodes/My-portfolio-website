@@ -31,7 +31,7 @@ const Footer = () => {
 							</div>
 							</a>
 						</div>
-						<div className="col pb-4">
+						<div className="col pb-1">
 							<a href="https://twitter.com/mainikhilhun">
 							<div className="social-icn text-black">
 								<FaXTwitter />

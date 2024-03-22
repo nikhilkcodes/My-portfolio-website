@@ -8,15 +8,14 @@
   height: 15px;
   width: 15px;
 }
-.profile-icn {
-  margin-right: 2%;
-}
+
 .profile-icn img {
   width: 300px;
   height: auto;
-  border-radius: 20%;
+  border-radius: 100%;
   margin-bottom: 20px;
-  margin-top: 9%;
+  margin-top: 10%;
+  margin-left: 10%;
   background-size: 200%;
   transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
 }
