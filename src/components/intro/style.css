@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 .intro-color {
-
   padding-bottom: 5%;
 }
 .icon {
   margin-left: 10px;
   font-size: 16px;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
 }
 
 .profile-icn img {
@@ -28,3 +28,4 @@
 .intro-section {
   margin-top: 5%;
 }
+

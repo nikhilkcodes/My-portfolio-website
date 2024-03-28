@@ -14,7 +14,7 @@ function Navbar() {
 						</a>
 					</div>
 					<button
-						className="navbar-toggler bg-black"
+						className="navbar-toggler bg-white"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarNav"

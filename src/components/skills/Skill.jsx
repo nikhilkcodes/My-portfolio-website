@@ -20,8 +20,8 @@ const Skill = () => {
 
 	return (
 		<div className="skill-color">
-					<h1 className="heading-above text-black text-center">Skills & Tools</h1>
-					<p className="text-black text-center">If you know what you are looking for</p>
+					<h1 className="heading-above text-black text-center" data-aos="fade-left">Skills & Tools</h1>
+					<p className="text-black text-center" data-aos="fade-left">If you know what you are looking for</p>
 			<ContentWrapper>
 				<div className="skill-body d-flex justify-content-center">
 					<div className="logos">

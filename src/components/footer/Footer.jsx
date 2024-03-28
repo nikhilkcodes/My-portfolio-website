@@ -9,6 +9,7 @@ const Footer = () => {
 		<div className="footer-body">
 			<ContentWrapper>
 				<div className="container text-center">
+				<h5 className="text-center text-black">Designed and developed by Nikhil Singh 🚩❤️</h5>
 					<div class="row row-cols-4 row-cols-lg-4 g-2 g-lg-3">
 						<div className="col">
 							<a href="https://www.linkedin.com/in/nikhil-singh-in/">
@@ -39,7 +40,6 @@ const Footer = () => {
 							</a>
 						</div>
 					</div>
-					<h5 className="text-center text-black">Designed and developed by Nikhil Singh</h5>
 				</div>
 			</ContentWrapper>
 		</div>

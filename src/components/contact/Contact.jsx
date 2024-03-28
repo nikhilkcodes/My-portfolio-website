@@ -22,32 +22,32 @@ const Contact = () => {
 		<div className="contact-body">
 			<ContentWrapper>
 				<div className="container text-start">
-					<h1 className="text-black text-center pb-3">Any Question? Feel Free to Contact</h1>
+					<h1 className="text-black text-center pb-3" data-aos="fade-left">Any Question? Feel Free to Contact</h1>
 					<div className="row align-items-start">
 						<div className="col">
 							<form onSubmit={handleSubmit} className="row g-3">
-								<div className="col-md-6">
+								<div className="col-md-6" data-aos="zoom-in">
 									<label className="form-label text-black">Name</label>
 									<input type="text" name="name" className="form-control bg-transparent text-black border border-black" />
 								</div>
-								<div className="col-md-6">
+								<div className="col-md-6" data-aos="zoom-in">
 									<label className="form-label text-black">Email</label>
 									<input type="email" name="_replyto" className="form-control bg-transparent text-black border border-black" />
 									<ValidationError prefix="Email" field="email" errors={state.errors} />
 								</div>
-								<div className="col-12">
+								<div className="col-12" data-aos="zoom-in">
 									<label className="form-label text-black">Phone</label>
 									<input type="text" name="phone" className="form-control bg-transparent text-black border border-black" />
 								</div>
-								<div className="col-12">
+								<div className="col-12" data-aos="zoom-in">
 									<label className="form-label text-black">Subject</label>
 									<input type="text" name="subject" className="form-control bg-transparent text-black border border-black" />
 								</div>
-								<div className="mb-3">
+								<div className="mb-3" data-aos="zoom-in">
 									<label className="form-label text-black">Your Message</label>
 									<textarea name="message" className="form-control bg-transparent text-black border border-black" rows="3"></textarea>
 								</div>
-								<div className="col-12">
+								<div className="col-12" data-aos="zoom-in">
 									<button type="submit" className="btn btn-outline-dark">
 										Submit <CiLocationArrow1 />
 									</button>

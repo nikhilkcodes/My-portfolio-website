@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
-
+import './style.css'
 const Button = ({onClick, value}) => {
 	const [buttonClass, setButton] = useState('btn btn-outline-dark');
 	return (

@@ -1,9 +1,9 @@
 .skill-color {
-   padding-bottom: 3%;
+   padding-bottom: 2%;
    background-color: #DDDDDD;
 }
 .heading-above {
-   padding-top: 5%;
+   padding-top: 2%;
    font-size: 40px;
 }
 .skill-body {
@@ -35,7 +35,7 @@
 
   .logos {
 	overflow: hidden;
-	padding: 60px 0;
+	padding: 5px;
 	white-space: nowrap;
 	position: relative;
   }

@@ -18,12 +18,12 @@ const Portfolio = () => {
 	return (
 		<div className="portfolio-body">
 			<ContentWrapper>
-			<h1 className="text-black text-center pb-3">Projects</h1>
+			<h1 className="text-black text-center pb-3" data-aos="fade-right">Projects</h1>
 				<div className="container">
-				<div class="container text-start">
-						<div class="row row-cols-1 row-cols-md-3 g-2 g-lg-3">
-						<div class="col">
-							<div class="p-3"><Card
+				<div className="container text-start">
+						<div className="row row-cols-1 row-cols-md-3 g-2 g-lg-3">
+						<div className="col" data-aos="zoom-in">
+							<div className="p-3"><Card
 							imageUrl={vibe}
 							title="VibeMatch ( Social Media Website )"
 							videoUrl={vibevideo}
@@ -32,8 +32,8 @@ const Portfolio = () => {
 							/>
 							</div>
 						</div>
-						<div class="col">
-							<div class="p-3"><Card  imageUrl={movie}
+						<div className="col" data-aos="zoom-in">
+							<div className="p-3"><Card  imageUrl={movie}
 							title="Movie database ( React & redux )"
 							videoUrl={cinemania}
 							buttonLink="https://github.com/nikhilkcodes/Cinemania-moviedb-react"
@@ -41,8 +41,8 @@ const Portfolio = () => {
 							/>
 							</div>
 						</div>
-						<div class="col">
-						    <div class="p-3"><Card  imageUrl={hospital}
+						<div className="col" data-aos="zoom-in">
+						    <div className="p-3"><Card  imageUrl={hospital}
 							title="Hospital Management DB ( Node.JS )"
 							videoUrl={hospitalvideo}
 							buttonLink="https://github.com/nikhilkcodes/Hospital-Management-System"
@@ -50,8 +50,8 @@ const Portfolio = () => {
 						/>
 						</div>
 						</div>
-						<div class="col">
-							<div class="p-3"><Card  imageUrl={employee}
+						<div className="col" data-aos="zoom-in">
+							<div className="p-3"><Card  imageUrl={employee}
 							title="Employee Management DB"
 							videoUrl={employeevideo}
 							buttonLink="https://github.com/nikhilkcodes/Employee-management-db"
@@ -59,8 +59,8 @@ const Portfolio = () => {
 							/>
 							</div>
 						</div>
-						<div class="col">
-							<div class="p-3"><Card  imageUrl={todo}
+						<div className="col" data-aos="zoom-in">
+							<div className="p-3"><Card  imageUrl={todo}
 							title="Simple Todo-List"
 							videoUrl={todovideo }
 							buttonLink="https://github.com/nikhilkcodes/todo-react"
@@ -68,8 +68,8 @@ const Portfolio = () => {
 							/>
 							</div>
 						</div>
-						<div class="col">
-							<div class="p-3"><Card  imageUrl={pretium}
+						<div className="col" data-aos="zoom-in">
+							<div className="p-3"><Card  imageUrl={pretium}
 							title="Pretium Soltech"
 							buttonLink="https://pretiumsoltech.com/"
 							Demo='https://pretiumsoltech.com/'
