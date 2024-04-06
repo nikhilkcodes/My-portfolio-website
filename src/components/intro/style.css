@@ -9,22 +9,6 @@
   width: 10px;
 }
 
-.profile-icn img {
-  width: 300px;
-  height: auto;
-  border-radius: 100%;
-  margin-bottom: 20px;
-  margin-top: 10%;
-  margin-left: 10%;
-  background-size: 200%;
-  transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
-}
-
-.profile-icn img:hover {
-  box-shadow: 0 0 20px rgba(247, 7, 118, 0.7), 0 0 20px rgba(248, 243, 152, 0.7), 0 0 20px rgba(102, 67, 181, 0.7);
-}
-
-
 .intro-section {
   margin-top: 5%;
 }

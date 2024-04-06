@@ -1,26 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import './style.css'
 import ContentWrapper from "../contentWrapper/ContentWrapper";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { RiJavascriptFill } from "react-icons/ri";
 import { BiLogoMongodb,BiLogoPostgresql } from "react-icons/bi";
 import { SiRedux,SiPostman } from "react-icons/si";
 import { FaHtml5,FaCss3Alt,FaBootstrap,FaReact,FaNode,FaGithub,FaGitAlt, FaLinux  } from "react-icons/fa";
-import resume from '../../components/resume/Nikhil-Singh-2001-Resume.pdf'
+
 
 
 const Skill = () => {
-	const handleDownload = () => {
-		const link = document.createElement('a');
-		link.href = resume;
-		link.download = 'Nikhil-Singh-2001-Resume.pdf';
-		link.click();
-	};
+
 
 	return (
 		<div className="skill-color">
-					<h1 className="heading-above text-black text-center" data-aos="fade-left">Skills & Tools</h1>
+					<h1 className="heading-above text-black text-center" data-aos="fade-left">Skills & <u>Tools</u></h1>
 					<p className="text-black text-center" data-aos="fade-left">If you know what you are looking for</p>
 			<ContentWrapper>
 				<div className="skill-body d-flex justify-content-center">
@@ -111,16 +104,8 @@ const Skill = () => {
 								</div>
 							</div>
 				</div>
-				<div className="d-flex justify-content-center align-items-center">
-					<button
-						type="button"
-						className="justify-content-center btn btn-outline-dark btn-lg"
-						onClick={handleDownload}
-					>
-						{/*default color white not changing in dark*/}
-						Download CV <FontAwesomeIcon icon={faDownload} />
-					</button>
-				</div>
+
+
 			</ContentWrapper>
 
 		</div>

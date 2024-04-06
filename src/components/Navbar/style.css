@@ -1,8 +1,10 @@
 .Nav-color {
 	background-color: #DDDDDD;
+	position: relative;
+
 }
 .routes:hover{
-	color: #6420AA;
+	color: #756AB6;
 }
 .name {
 	font-size: 24px;

@@ -1,7 +1,23 @@
 .footer-body {
 	padding-top: 1%;
-	padding-bottom: 3%;
+	background-color: #DDDDDD;
 }
-.social-icn {
-	font-size: 50px;
-}
+.circle {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #ccc;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+  }
+  .circle span {
+	font-size: 25px;
+  }
+  .circle:hover {
+	background-color: #756AB6;
+	span {
+	  color: white;
+	}
+  }

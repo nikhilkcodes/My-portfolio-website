@@ -1,0 +1,14 @@
+.carousel-control-prev, .carousel-control-next {
+	width: 5%;
+	position: absolute;
+	top: -25%;
+}
+
+.testimonial-body{
+	background-color: #DDDDDD;
+}
+
+.testimonies {
+	margin-left: 50px;
+	margin-right: 50px;
+}

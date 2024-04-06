@@ -14,13 +14,6 @@ const Intro = () => {
     window.location.href = mailtoURL;
 	}
 
-	const openLinkedInMessage = () => {
-		const linkedinUsername = 'nikhil-singh-in';
-
-		const customMessage = 'Hello Nikhil I saw your profile and loved your work i want to talk about collaboration !';
-		const linkedinMessageURL = `https://www.linkedin.com/in/${linkedinUsername}/?originalSubdomain=messaging&isAuthenticated=true&message=${encodeURIComponent(customMessage)}`;
-	    window.open(linkedinMessageURL, '_blank');
-	}
 
 	return (
 		<div className="intro-color" data-aos="fade-right">
@@ -48,7 +41,6 @@ const Intro = () => {
 								</div>
 							</div>
 						</div>
-
 				</div>
 			</div>
 		</ContentWrapper>

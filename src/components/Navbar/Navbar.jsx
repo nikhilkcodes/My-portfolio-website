@@ -10,7 +10,7 @@ function Navbar() {
 				<div className="container-fluid">
 					<div className="d-flex justify-content-start">
 						<a className="navbar-brand text-black" href="#">
-
+                         <h3 className="d-block d-sm-none">Nikhil Singh</h3>
 						</a>
 					</div>
 					<button

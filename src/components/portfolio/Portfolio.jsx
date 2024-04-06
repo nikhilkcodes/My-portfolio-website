@@ -14,16 +14,16 @@ import employeevideo from './../../assets/videos/employee.mp4';
 import cinemania from './../../assets/videos/cinemania.mp4';
 import todovideo from './../../assets/videos/todo.mp4';
 
-const Portfolio = () => {
+const Portfolio = ({style}) => {
 	return (
-		<div className="portfolio-body">
+		<div className="portfolio-body" style={style}>
 			<ContentWrapper>
-			<h1 className="text-black text-center pb-3" data-aos="fade-right">Projects</h1>
-				<div className="container">
+			<h1 className="text-black text-center pb-3" data-aos="fade-right"><u>Proj</u>ects</h1>
+				<div className="container pb-5">
 				<div className="container text-start">
 						<div className="row row-cols-1 row-cols-md-3 g-2 g-lg-3">
-						<div className="col" data-aos="zoom-in">
-							<div className="p-3"><Card
+						<div className="col" >
+							<div><Card
 							imageUrl={vibe}
 							title="VibeMatch ( Social Media Website )"
 							videoUrl={vibevideo}
@@ -32,8 +32,8 @@ const Portfolio = () => {
 							/>
 							</div>
 						</div>
-						<div className="col" data-aos="zoom-in">
-							<div className="p-3"><Card  imageUrl={movie}
+						<div className="col">
+							<div><Card  imageUrl={movie}
 							title="Movie database ( React & redux )"
 							videoUrl={cinemania}
 							buttonLink="https://github.com/nikhilkcodes/Cinemania-moviedb-react"
@@ -41,8 +41,8 @@ const Portfolio = () => {
 							/>
 							</div>
 						</div>
-						<div className="col" data-aos="zoom-in">
-						    <div className="p-3"><Card  imageUrl={hospital}
+						<div className="col">
+						    <div ><Card  imageUrl={hospital}
 							title="Hospital Management DB ( Node.JS )"
 							videoUrl={hospitalvideo}
 							buttonLink="https://github.com/nikhilkcodes/Hospital-Management-System"
@@ -50,17 +50,17 @@ const Portfolio = () => {
 						/>
 						</div>
 						</div>
-						<div className="col" data-aos="zoom-in">
-							<div className="p-3"><Card  imageUrl={employee}
-							title="Employee Management DB"
+						<div className="col">
+							<div><Card  imageUrl={employee}
+							title="Employee Manage DB"
 							videoUrl={employeevideo}
 							buttonLink="https://github.com/nikhilkcodes/Employee-management-db"
 							Demo='https://www.loom.com/share/15476fe1bb284f22963691a9f525ab75?sid=acd8c1fa-2d80-48a1-8487-b966d4f39fc0'
 							/>
 							</div>
 						</div>
-						<div className="col" data-aos="zoom-in">
-							<div className="p-3"><Card  imageUrl={todo}
+						<div className="col">
+							<div><Card  imageUrl={todo}
 							title="Simple Todo-List"
 							videoUrl={todovideo }
 							buttonLink="https://github.com/nikhilkcodes/todo-react"
@@ -68,8 +68,8 @@ const Portfolio = () => {
 							/>
 							</div>
 						</div>
-						<div className="col" data-aos="zoom-in">
-							<div className="p-3"><Card  imageUrl={pretium}
+						<div className="col">
+							<div><Card  imageUrl={pretium}
 							title="Pretium Soltech"
 							buttonLink="https://pretiumsoltech.com/"
 							Demo='https://pretiumsoltech.com/'

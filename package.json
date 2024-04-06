@@ -10,21 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@formspree/react": "^2.5.1",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^1.6.8",
-    "http-proxy-middleware": "^2.0.6",
-    "localforage": "^1.10.0",
-    "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.12.0",
+    "react-hot-toast": "^2.4.1",
+    "react-pdf": "^7.7.1",
     "react-router-dom": "^6.21.0",
-    "sort-by": "^1.2.0"
+    "submitjson": "^0.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

@@ -74,3 +74,20 @@
   .dark-icon {
 	color: #000; /* Set color for icon in dark mode */
   }
+
+  @media (max-width: 768px) {
+	.modal-lg {
+	  max-width: 90%;
+	}
+	.modal-body {
+	  overflow-y: auto;
+	}
+	.modal-dialog {
+	  margin: 0;
+	  width: auto;
+	}
+	.modal-content {
+	  border: none;
+	  border-radius: 0;
+	}
+  }
