@@ -3,7 +3,6 @@ import './style.css';
 import ContentWrapper from './../contentWrapper/ContentWrapper';
 import { CiLocationArrow1 } from "react-icons/ci";
 import SubmitJSON from 'submitjson'
-import {toast} from 'react-hot-toast';
 
 const Contact = ({style}) => {
 	const apiKey = import.meta.env.VITE_SUBMIT_JSON_API_KEY

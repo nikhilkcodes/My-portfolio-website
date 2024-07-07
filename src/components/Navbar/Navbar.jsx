@@ -1,76 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import './style.css'
-import ContentWrapper from "../contentWrapper/ContentWrapper";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import ThemeBtn from "../themebtn/ThemeBtn";
+
 function Navbar() {
-	return (
-		<div className="Nav-color">
-		<ContentWrapper>
-			<nav className="navbar navbar-expand-lg bg-transparent">
-				<div className="container-fluid">
-					<div className="d-flex justify-content-start">
-						<a className="navbar-brand text-black" href="#">
-                         <h3 className="d-block d-sm-none">Nikhil Singh</h3>
-						</a>
-					</div>
-					<button
-						className="navbar-toggler bg-white"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNav"
-						aria-controls="navbarNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span className="navbar-toggler-icon"></span>
-					</button>
-					<div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-						<ul className="navbar-nav">
-							<li className="nav-item mx-2">
-							<Link to="/" className="custom-link">
-								<div className="nav-link active text-black" aria-current="page">
-									<p className="routes">
-									   Home
-									</p>
-								</div>
-							</Link>
-							</li>
-							<li className="nav-item mx-2">
-							<Link to="/about" className="custom-link">
-								<a className="nav-link text-black">
-									<p className="routes">
-								About
-									</p>
-								</a>
-								</Link>
-							</li>
-							<li className="nav-item mx-2">
-							<Link to="/projects" className="custom-link">
-								<a className="nav-link text-black">
-									<p className="routes">
-								Projects
-									</p>
-								</a>
-								</Link>
-							</li>
-							<li className="nav-item mx-2">
-							<Link to="/contact" className="custom-link" >
-								<a className="nav-link text-black">
-									<p className="routes">
-									Contact
-									</p>
-								</a>
-								</Link>
-							</li>
-						</ul>
+  const handleMenu = () => {
+    const navDialog = document.getElementById('nav-dialog');
+    navDialog.classList.toggle('hidden');
+  };
 
-					</div>
-				</div>
-			</nav>
-		</ContentWrapper>
-		</div>
+  return (
+    <div className="Nav-color">
+      <nav className="bg-gray-200 dark:bg-slate-800">
+        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 
-	)
+          <div className="relative flex h-16 items-center justify-between">
+            <div className="text-2xl text-black font-semibold font-monospace dark:text-white">
+              Nikhil Singh
+            </div>
+            <div className="font-monospace dark:text-white">
+              <ul className="md:flex hidden">
+                <li className="mx-[10px] cursor-pointer">Home</li>
+                <li className="mx-[10px] cursor-pointer">About</li>
+                <li className="mx-[10px] cursor-pointer">Projects</li>
+                <li className="mx-[10px] cursor-pointer">Contact</li>
+              </ul>
+            </div>
+            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              {/**dark mode button here */}
+              <ThemeBtn />
+              {/**here navbutton for smaller screens */}
+              <br />
+              <button className="p-2 md:hidden" onClick={handleMenu}>
+                <i className="fa-solid fa-bars"></i>
+              </button>
+              <div id="nav-dialog" className="hidden fixed z-10 md:hidden bg-white dark:bg-slate-800 inset-0 p-3">
+                <div id="nav-bar" className="flex justify-between">
+                  <button className="p-2 md:hidden" onClick={handleMenu}>
+                    <i className="fa-solid fa-xmark text-black dark:text-white"></i>
+                  </button>
+                </div>
+                <div className="mt-6 font-monospace">
+                  <a href="#" className="font-medium m-3 p-3 hover:bg-gray-200 dark:hover:bg-slate-800 dark:text-white block rounded-lg">Home</a>
+                  <a href="#" className="font-medium m-3 p-3 hover:bg-gray-200 dark:hover:bg-slate-800 dark:text-white block rounded-lg">About</a>
+                  <a href="#" className="font-medium m-3 p-3 hover:bg-gray-200 dark:hover:bg-slate-800 dark:text-white block rounded-lg">Project</a>
+                  <a href="#" className="font-medium m-3 p-3 hover:bg-gray-200 dark:hover:bg-slate-800 dark:text-white block rounded-lg">Contact</a>
+                </div>
+                <div className="h-[1px] bg-gray-300 dark:bg-gray-600"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  )
 }
 
 export default Navbar;
