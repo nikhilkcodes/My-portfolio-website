@@ -20,10 +20,10 @@ function Navbar() {
             </div>
             <div className="font-monospace dark:text-white">
               <ul className="md:flex hidden">
-                <li className="mx-[10px] cursor-pointer">Home</li>
-                <li className="mx-[10px] cursor-pointer">About</li>
-                <li className="mx-[10px] cursor-pointer">Projects</li>
-                <li className="mx-[10px] cursor-pointer">Contact</li>
+              <li className="mx-[10px] cursor-pointer"><Link to="/">Home</Link></li>
+                <li className="mx-[10px] cursor-pointer"><Link to="/about">About</Link></li>
+                <li className="mx-[10px] cursor-pointer"><Link to="/projects">Projects</Link></li>
+                <li className="mx-[10px] cursor-pointer"><Link to="/contact">Contact</Link></li>
               </ul>
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -32,7 +32,7 @@ function Navbar() {
               {/**here navbutton for smaller screens */}
               <br />
               <button className="p-2 md:hidden" onClick={handleMenu}>
-                <i className="fa-solid fa-bars"></i>
+                <i className="fa-solid fa-bars dark:text-white"></i>
               </button>
               <div id="nav-dialog" className="hidden fixed z-10 md:hidden bg-white dark:bg-slate-800 inset-0 p-3">
                 <div id="nav-bar" className="flex justify-between">
@@ -41,10 +41,10 @@ function Navbar() {
                   </button>
                 </div>
                 <div className="mt-6 font-monospace">
-                  <a href="#" className="font-medium m-3 p-3 hover:bg-gray-200 dark:hover:bg-slate-800 dark:text-white block rounded-lg">Home</a>
-                  <a href="#" className="font-medium m-3 p-3 hover:bg-gray-200 dark:hover:bg-slate-800 dark:text-white block rounded-lg">About</a>
-                  <a href="#" className="font-medium m-3 p-3 hover:bg-gray-200 dark:hover:bg-slate-800 dark:text-white block rounded-lg">Project</a>
-                  <a href="#" className="font-medium m-3 p-3 hover:bg-gray-200 dark:hover:bg-slate-800 dark:text-white block rounded-lg">Contact</a>
+                  <Link to="/" className="font-medium m-3 p-3 hover:bg-gray-200 dark:hover:bg-slate-800 dark:text-white block rounded-lg">Home</Link>
+                  <Link to="/about" className="font-medium m-3 p-3 hover:bg-gray-200 dark:hover:bg-slate-800 dark:text-white block rounded-lg">About</Link>
+                  <Link to="/projects" className="font-medium m-3 p-3 hover:bg-gray-200 dark:hover:bg-slate-800 dark:text-white block rounded-lg">Projects</Link>
+                  <Link to="/contact" className="font-medium m-3 p-3 hover:bg-gray-200 dark:hover:bg-slate-800 dark:text-white block rounded-lg">Contact</Link>
                 </div>
                 <div className="h-[1px] bg-gray-300 dark:bg-gray-600"></div>
               </div>

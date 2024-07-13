@@ -5,26 +5,21 @@ import useTheme from "../../Context/Theme";
 import GraphemeSplitter from 'grapheme-splitter';
 import { TypeAnimation } from "react-type-animation";
 import { LuMailPlus } from "react-icons/lu";
-import emailjs from 'emailjs-com';
 
 const Intro = () => {
   const { themeMode } = useTheme();
   const splitter = new GraphemeSplitter();
 
-  const sendEmail = () => {
-    emailjs.send( import.meta.env.VITE_EMAIL_SERVICE_ID , import.meta.env.VITE_EMAIL_TEMP_ID, {
-      to_name: 'Nikhil Singh',
-      from_name: 'Your Name',
-      message: 'I hope this message finds you well. I am reaching out to connect regarding potential job or freelance opportunities.',
-      reply_to: 'nikhilsingh.cc@gmail.com'
-    }, import.meta.env.VITE_EMAIL_PUBLIC_KEY)
-    .then((result) => {
-      alert('Email sent successfully');
-    }, (error) => {
-      alert('Error sending email: ' + error.text);
-    });
-  };
-
+  const openGmailMessage = () => {
+    const recipientEmail = 'nikhilsingh.cc@gmail.com';  // Replace with the recipient's email address
+      const subject = 'Regarding Work';
+      const customMessage = 'Hello, I would like to discuss a matter with you.';
+  
+      const mailtoURL = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(customMessage)}`;
+  
+      window.location.href = mailtoURL;
+    }
+  
   return (
     <div className={`pt-3 pb-4 ${themeMode === 'dark' ? 'bg-slate-700 text-white' : 'bg-white text-black'}`}>
       <ContentWrapper>
@@ -56,7 +51,7 @@ const Intro = () => {
           Open to job and freelance opportunities to collaborate and innovate.</p>
         </div>
         <div className="flex justify-center pt-4">
-          <button onClick={sendEmail} className="flex items-center space-x-2 rounded-md border-2 border-black bg-transparent text-black dark:text-white dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-4 py-2 transition-colors duration-300">
+          <button onClick={openGmailMessage} className="flex items-center space-x-2 rounded-md border-2 border-black bg-transparent text-black dark:text-white dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-4 py-2 transition-colors duration-300">
             <span>Connect</span>
             <LuMailPlus />
           </button>
