@@ -9,37 +9,36 @@
 .skill-body {
 	padding-bottom: 1%;
 }
-
 .icon-body {
 	font-size: 100px;
 	color: white;
 	text-decoration: none;
-	width: 1em;
-	height: 1em;
-}
+	display: inline-block; /* Ensure icons are inline */
+	padding: 10px; /* Add padding for spacing between icons */
+  }
+  
 .icon-body:hover {
    transform: scale(1.1); /* Example: Increase size on hover */
-   opacity: 0.5;
+   opacity: 0.8;
 
 }
 
-
-  @keyframes slide {
-	from {
+@keyframes slide {
+	0% {
 	  transform: translateX(0);
 	}
-	to {
+	100% {
 	  transform: translateX(-100%);
 	}
   }
 
   .logos {
+	white-space: nowrap; /* Prevent icons from wrapping */
 	overflow: hidden;
-	padding: 5px;
-	white-space: nowrap;
 	position: relative;
+	padding: 5px;
   }
-
+  
   .logos:before,
   .logos:after {
 	position: absolute;
@@ -64,7 +63,7 @@
 
   .logos-slide {
 	display: inline-block;
-	animation: 35s slide infinite linear;
+	animation: slide 35s infinite linear; /* Adjust animation duration and timing function */
   }
 
   .logos-slide img {

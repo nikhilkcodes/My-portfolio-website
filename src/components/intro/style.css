@@ -13,3 +13,23 @@
   margin-top: 5%;
 }
 
+/* style.css */
+.transition-all {
+  transition: all 1s ease-in-out;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.transform {
+  transform: translateY(-5px);
+}
+
+.translate-y-0 {
+  transform: translateY(0);
+}
